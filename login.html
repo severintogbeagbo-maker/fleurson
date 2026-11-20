@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="inscription">
+    <h2 style="text-align: center; color: #26352d;">Connexion</h2>
+
+    <form id="connexionForm" novalidate>
+      <div>
+        <label class="label-form" for="identifiant">Email ou numéro de téléphone</label>
+        <input type="text" id="identifiant" placeholder="exemple@mail.com ou 0197000000">
+        <div id="identifiantError" class="errormessage"></div>
+      </div>
+
+      <div>
+        <label class="label-form" for="loginPassword">Mot de passe</label>
+        <input type="password" id="loginPassword" placeholder="Votre mot de passe">
+        <div id="loginPasswordError" class="errormessage"></div>
+      </div>
+
+      <button type="submit">Se connecter</button>
+    </form>
+
+    <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+      Pas encore de compte ? <a href="register.html">S'inscrire</a>
+    </p>
+  </div>
+
+  <div id="notification" class="notification">
+    <div class="notification-content">
+      <button id="closeNotification" class="close-notification">&times;</button>
+      <div id="notificationIcon"></div>
+      <h3 id="notificationTitle"></h3>
+      <p id="notificationText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

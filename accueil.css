@@ -1,0 +1,24 @@
+body {
+  background-color: #f5f3ed;
+  margin: 0;
+  padding: 15px;
+}
+
+#listeInscrits {
+  padding: 10px;
+}
+
+#listeInscrits div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#listeInscrits h3 {
+  margin-bottom: 5px;
+  color: #26352d;
+}
+
+#listeInscrits p {
+  margin: 4px 0;
+  color: #444;
+}

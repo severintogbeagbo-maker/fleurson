@@ -1,0 +1,178 @@
+* { 
+  box-sizing: border-box; 
+} 
+
+body { 
+  margin: 0; 
+  padding: 15px 15px; 
+  font-family: Arial, sans-serif; 
+  background-color: #f5f3ed; 
+  background-image: url("mans.png"); 
+} 
+
+.inscription { 
+  max-width: 430px; 
+  margin: 5px auto; 
+  padding: 20px 25px; 
+  background-color: #ffffff; 
+  border-radius: 15px; 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); 
+} 
+
+.label-form { 
+  display: inline-block; 
+  margin-bottom: 4px; 
+  color: #26352d; 
+  font-size: 13px; 
+  font-weight: 600; 
+} 
+
+input, select { 
+  width: 100%; 
+  padding: 9px 12px; 
+  border: 1px solid #deded8; 
+  border-radius: 8px; 
+  background-color: #fafaf8; 
+  font-size: 14px; 
+  outline: none; 
+  transition: 0.2s; 
+} 
+
+input:focus, select:focus { 
+  border-color: #198754; 
+  background-color: white; 
+} 
+
+button { 
+  width: 100%; 
+  padding: 11px; 
+  margin-top: 6px; 
+  border: none; 
+  border-radius: 8px; 
+  background-color: #198754; 
+  color: white; 
+  font-size: 15px; 
+  font-weight: bold; 
+  cursor: pointer; 
+} 
+
+button:hover { 
+  background-color: #146c43; 
+} 
+
+.errormessage { 
+  color: #dc2626; 
+  font-size: 12px; 
+  margin: 3px 0 6px; 
+  min-height: 14px; 
+} 
+
+.invalid { 
+  border: 1px solid #dc2626; 
+} 
+
+a { 
+  color: #198754; 
+  text-decoration: none; 
+  font-weight: bold; 
+} 
+
+a:hover { 
+  text-decoration: underline; 
+} 
+
+#successMessage, #errorMessage { 
+  padding: 10px; 
+  margin-top: 10px; 
+  border-radius: 8px; 
+  text-align: center; 
+  font-weight: bold; 
+  display: none; 
+} 
+
+#successMessage { 
+  background-color: #d1fae5; 
+  color: #065f46; 
+  border: 1px solid #10b981; 
+} 
+
+#errorMessage { 
+  background-color: #fee2e2; 
+  color: #991b1b; 
+  border: 1px solid #ef4444; 
+} 
+
+.notification { 
+  position: fixed; 
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  display: none; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; 
+} 
+
+.notification-content { 
+  background: white; 
+  width: 320px; 
+  max-width: 90%; 
+  padding: 30px; 
+  border-radius: 16px; 
+  text-align: center; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+  animation: apparition 0.3s ease; 
+  position: relative; 
+} 
+
+.notification.success .notification-content { 
+  border-top: 5px solid #10b981; 
+} 
+
+.notification.error .notification-content { 
+  border-top: 5px solid #ef4444; 
+} 
+
+#notificationIcon { 
+  font-size: 45px; 
+  margin-bottom: 10px; 
+} 
+
+@keyframes apparition { 
+  from { opacity: 0; transform: translateY(-20px); } 
+  to { opacity: 1; transform: translateY(0); } 
+} 
+
+.close-notification { 
+  position: absolute; 
+  top: 12px; 
+  right: 12px; 
+  width: 32px; 
+  height: 32px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: none; 
+  border-radius: 50%; 
+  background-color: #f1f5f9; 
+  color: #475569; 
+  font-size: 22px; 
+  font-weight: 400; 
+  line-height: 1; 
+  cursor: pointer; 
+  transition: all 0.25s ease; 
+} 
+
+.close-notification:hover { 
+  background-color: #fee2e2; 
+  color: #dc2626; 
+  transform: rotate(90deg); 
+} 
+
+.close-notification:active { 
+  transform: scale(0.9); 
+} 
+
+#connexionForm > div,
+#inscriptionForm > div { 
+  margin-bottom: 8px; 
+}
